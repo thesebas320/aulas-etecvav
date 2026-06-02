@@ -1,0 +1,152 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9; 
+}
+
+
+.header {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+.menu {
+    background-color: #2563eb;
+    text-align: center;
+    padding: 12px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #f97316;
+}
+
+
+.conteudo {
+    background-color: white;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+
+h2 {
+    color: #1e3a8a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+}
+
+
+.lateral {
+    background-color: #e0f2fe;
+    padding: 20px;
+    border-left: 3px solid #2563eb;
+}
+
+
+.destaque {
+    color: #f97316;
+    font-weight: bold;
+    background-color: #fff7ed;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+pre {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+
+.footer {
+    background: linear-gradient(90deg, #1e3a8a, #0f172a);
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+
+.lateral ul li {
+    margin-bottom: 8px;
+}
+/* --- ESTILO BASE (MOBILE-FIRST) --- */
+/* Focado em telas pequenas (iPhone/Android) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* No mobile, menus centralizados são comuns */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante, empurrando o rodapé */
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* --- MEDIA QUERY: TABLETS (Telas acima de 600px) --- */
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        padding: 40px;
+    }
+}
+
+/* --- MEDIA QUERY: COMPUTADOR (Telas acima de 1024px) --- */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1000px; /* Evita que o texto fique largo demais no PC */
+        margin: 0 auto;    /* Centraliza o conteúdo no meio da tela */
+        text-align: left;  /* Alinhamento padrão de leitura em desktop */
+    }
+
+    nav ul {
+        justify-content: flex-start; /* Menu alinhado à esquerda no PC */
+        padding-left: 50px;
+    }
+}
